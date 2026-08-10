@@ -1,0 +1,90 @@
+{
+  "session_id": "live_lesson_20260809_153652",
+  "agent": "LiveLessonOrchestrator",
+  "session_state": "COMPLETE",
+  "lesson_type": "shapes",
+  "input_mode": "microphone",
+  "start_method": "automatic_countdown",
+  "camera": {
+    "camera_index": 0,
+    "frames_processed": 420,
+    "perception_updates": 28,
+    "face_detected": true,
+    "face_count": 1,
+    "face_centered": true,
+    "face_position": "center",
+    "face_size_ratio": 0.1183,
+    "visual_readiness": "ready",
+    "face_box": [
+      162,
+      161,
+      341,
+      364
+    ]
+  },
+  "planner": {
+    "final_decision": "READY",
+    "final_reason": "One learner is visible, properly positioned, and the mouth is visible.",
+    "final_action": "Begin the speech practice exercise.",
+    "integration_error": null
+  },
+  "mouth_movement": {
+    "detected": true,
+    "movement_events": 5,
+    "max_delta": 0.1952,
+    "threshold": 0.03
+  },
+  "lesson": {
+    "completed": true,
+    "error": null,
+    "result": {
+      "agent": "LessonAgent",
+      "status": "success",
+      "lesson_type": "shapes",
+      "input_mode": "microphone",
+      "lesson": {
+        "lesson_type": "shapes",
+        "input_mode": "microphone",
+        "total_items": 3,
+        "correct": 0,
+        "near_match": 0,
+        "incorrect": 1,
+        "no_input": 2,
+        "results": [
+          {
+            "prompt": "circle",
+            "response": "",
+            "outcome": "NO_INPUT",
+            "attempt": 1,
+            "input_mode": "microphone",
+            "audio_path": "results\\audio\\shape_circle_20260809_153708_848130.wav",
+            "audio_level": 5.3704108722740784e-05
+          },
+          {
+            "prompt": "square",
+            "response": "",
+            "outcome": "NO_INPUT",
+            "attempt": 1,
+            "input_mode": "microphone",
+            "audio_path": "results\\audio\\shape_square_20260809_153712_839969.wav",
+            "audio_level": 7.120327791199088e-05
+          },
+          {
+            "prompt": "triangle",
+            "response": "yes, yes, yes.",
+            "outcome": "INCORRECT",
+            "attempt": 1,
+            "input_mode": "microphone",
+            "audio_path": "results\\audio\\shape_triangle_20260809_153716_775581.wav",
+            "audio_level": 0.0019215975189581513
+          }
+        ]
+      }
+    }
+  },
+  "timing": {
+    "started": "2026-08-09T15:36:52.953100",
+    "ended": "2026-08-09T15:37:21.785837",
+    "duration_seconds": 28.832737
+  }
+}

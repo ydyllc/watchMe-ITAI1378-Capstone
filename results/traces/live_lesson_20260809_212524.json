@@ -1,0 +1,59 @@
+{
+  "session_id": "live_lesson_20260809_212524",
+  "agent": "LiveLessonOrchestrator",
+  "session_state": "LESSON_RUNNING",
+  "lesson_type": "shapes",
+  "input_mode": "microphone",
+  "start_method": "automatic_countdown",
+  "camera": {
+    "camera_index": 0,
+    "frames_processed": 488,
+    "perception_updates": 32,
+    "face_detected": true,
+    "face_count": 1,
+    "face_centered": true,
+    "face_position": "center",
+    "face_size_ratio": 0.0863,
+    "visual_readiness": "ready",
+    "face_box": [
+      226,
+      119,
+      375,
+      297
+    ]
+  },
+  "planner": {
+    "final_decision": "READY",
+    "final_reason": "One learner is visible, properly positioned, and the mouth is visible.",
+    "final_action": "Begin the speech practice exercise.",
+    "integration_error": null
+  },
+  "mouth_movement": {
+    "detected": true,
+    "movement_events": 2,
+    "max_delta": 0.1672,
+    "threshold": 0.03
+  },
+  "lesson_interface": {
+    "phase": "listening",
+    "current_prompt": "square",
+    "last_response": null,
+    "last_outcome": null,
+    "item_number": 2,
+    "total_items": 3,
+    "correct": 0,
+    "near_match": 0,
+    "incorrect": 0,
+    "no_input": 1
+  },
+  "lesson": {
+    "completed": false,
+    "error": null,
+    "result": null
+  },
+  "timing": {
+    "started": "2026-08-09T21:25:24.828329",
+    "ended": "2026-08-09T21:25:50.652309",
+    "duration_seconds": 25.82398
+  }
+}

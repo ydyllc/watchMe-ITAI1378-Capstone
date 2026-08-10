@@ -1,0 +1,53 @@
+{
+    "input": {
+        "image": "data/sample/blank.jpg"
+    },
+    "perception": {
+        "agent": "PerceptionAgent",
+        "status": "success",
+        "input": {
+            "image": "data/sample/blank.jpg"
+        },
+        "face": {
+            "detected": false,
+            "count": 0,
+            "centered": false,
+            "position": null,
+            "size_ratio": null,
+            "offset_x_ratio": null,
+            "offset_y_ratio": null
+        },
+        "mouth": {
+            "analyzed": false,
+            "visible": false,
+            "open": null,
+            "open_ratio": null
+        },
+        "visual_readiness": "no_face",
+        "perception_ready": false,
+        "artifacts": {
+            "face_annotation": "results/images/annotated_blank.jpg",
+            "mouth_annotation": null
+        },
+        "performance": {
+            "processing_ms": 240.04
+        }
+    },
+    "planning": {
+        "agent": "PlannerAgent",
+        "status": "success",
+        "decision": {
+            "state": "WAIT_FOR_USER",
+            "reason": "No learner face was detected."
+        },
+        "action": {
+            "message": "Move into view of the camera."
+        }
+    },
+    "final_action": {
+        "message": "Move into view of the camera."
+    },
+    "performance": {
+        "total_processing_ms": 240.07
+    }
+}

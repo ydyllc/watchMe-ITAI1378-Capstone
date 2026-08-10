@@ -1,0 +1,25 @@
+{
+    "input": {
+        "image": "data/sample/rotated_right.jpg"
+    },
+    "perception": {
+        "face_detected": true,
+        "face_count": 1,
+        "face_centered": true,
+        "face_position": "center",
+        "face_size_ratio": 0.0946,
+        "offset_x_ratio": 0.0941,
+        "offset_y_ratio": 0.1119
+    },
+    "decision": {
+        "state": "ready",
+        "reason": "One face is visible, centered, and within the expected size range."
+    },
+    "action": {
+        "message": "You are ready to begin the speech exercise.",
+        "annotated_output": "results/images/annotated_rotated_right.jpg"
+    },
+    "performance": {
+        "processing_ms": 257.98
+    }
+}

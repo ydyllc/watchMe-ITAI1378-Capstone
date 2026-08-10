@@ -1,0 +1,88 @@
+{
+    "input": {
+        "image": "data/sample/threekidssmiling.jpg"
+    },
+    "perception": {
+        "agent": "PerceptionAgent",
+        "status": "success",
+        "input": {
+            "image": "data/sample/threekidssmiling.jpg"
+        },
+        "face": {
+            "detected": true,
+            "count": 3,
+            "centered": true,
+            "position": "center",
+            "size_ratio": 0.0868,
+            "offset_x_ratio": -0.0219,
+            "offset_y_ratio": -0.1217,
+            "boxes": [
+                {
+                    "x_min": 977,
+                    "y_min": 338,
+                    "x_max": 1307,
+                    "y_max": 709,
+                    "box_width": 330,
+                    "box_height": 371,
+                    "area": 122430,
+                    "center_x": 1142.0,
+                    "center_y": 523.5
+                },
+                {
+                    "x_min": 202,
+                    "y_min": 354,
+                    "x_max": 543,
+                    "y_max": 739,
+                    "box_width": 341,
+                    "box_height": 385,
+                    "area": 131285,
+                    "center_x": 372.5,
+                    "center_y": 546.5
+                },
+                {
+                    "x_min": 574,
+                    "y_min": 226,
+                    "x_max": 956,
+                    "y_max": 644,
+                    "box_width": 382,
+                    "box_height": 418,
+                    "area": 159676,
+                    "center_x": 765.0,
+                    "center_y": 435.0
+                }
+            ]
+        },
+        "mouth": {
+            "analyzed": false,
+            "visible": false,
+            "open": null,
+            "open_ratio": null
+        },
+        "visual_readiness": "multiple_faces",
+        "perception_ready": false,
+        "artifacts": {
+            "face_annotation": "results/images/annotated_threekidssmiling.jpg",
+            "mouth_annotation": null
+        },
+        "performance": {
+            "processing_ms": 237.43
+        }
+    },
+    "planning": {
+        "agent": "PlannerAgent",
+        "status": "success",
+        "decision": {
+            "state": "ONE_LEARNER_REQUIRED",
+            "reason": "More than one face was detected."
+        },
+        "action": {
+            "message": "Make sure only one learner is in front of the camera."
+        }
+    },
+    "final_action": {
+        "message": "Make sure only one learner is in front of the camera."
+    },
+    "performance": {
+        "total_processing_ms": 237.48
+    }
+}

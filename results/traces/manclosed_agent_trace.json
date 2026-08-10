@@ -1,0 +1,66 @@
+{
+    "input": {
+        "image": "data/sample/manclosed.jpg"
+    },
+    "perception": {
+        "agent": "PerceptionAgent",
+        "status": "success",
+        "input": {
+            "image": "data/sample/manclosed.jpg"
+        },
+        "face": {
+            "detected": true,
+            "count": 1,
+            "centered": true,
+            "position": "center",
+            "size_ratio": 0.0368,
+            "offset_x_ratio": -0.0087,
+            "offset_y_ratio": -0.1994,
+            "boxes": [
+                {
+                    "x_min": 621,
+                    "y_min": 200,
+                    "x_max": 853,
+                    "y_max": 462,
+                    "box_width": 232,
+                    "box_height": 262,
+                    "area": 60784,
+                    "center_x": 737.0,
+                    "center_y": 331.0
+                }
+            ]
+        },
+        "mouth": {
+            "analyzed": true,
+            "visible": true,
+            "open": false,
+            "open_ratio": 0.0
+        },
+        "visual_readiness": "move_closer",
+        "perception_ready": false,
+        "artifacts": {
+            "face_annotation": "results/images/annotated_manclosed.jpg",
+            "mouth_annotation": "results/images/mouth_annotated_manclosed.jpg"
+        },
+        "performance": {
+            "processing_ms": 371.9
+        }
+    },
+    "planning": {
+        "agent": "PlannerAgent",
+        "status": "success",
+        "decision": {
+            "state": "MOVE_CLOSER",
+            "reason": "The learner is centered, but the face is too small in the frame."
+        },
+        "action": {
+            "message": "Move closer to the camera."
+        }
+    },
+    "final_action": {
+        "message": "Move closer to the camera."
+    },
+    "performance": {
+        "total_processing_ms": 371.96
+    }
+}

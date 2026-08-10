@@ -1,0 +1,25 @@
+{
+    "input": {
+        "image": "data/sample/twosmilingonenot.jpg"
+    },
+    "perception": {
+        "face_detected": true,
+        "face_count": 3,
+        "face_centered": false,
+        "face_position": "left",
+        "face_size_ratio": 0.0458,
+        "offset_x_ratio": -0.2169,
+        "offset_y_ratio": -0.069
+    },
+    "decision": {
+        "state": "multiple_faces",
+        "reason": "More than one face was detected. watchMe requires one learner at a time."
+    },
+    "action": {
+        "message": "Please make sure only one learner is in front of the camera.",
+        "annotated_output": "results/images/annotated_twosmilingonenot.jpg"
+    },
+    "performance": {
+        "processing_ms": 291.79
+    }
+}

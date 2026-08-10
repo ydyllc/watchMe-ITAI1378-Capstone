@@ -1,0 +1,86 @@
+[
+    {
+      "id": "case_01",
+      "image": "data/sample/smiling.jpg",
+      "expected_decision": "MOVE_CLOSER",
+      "category": "face_size"
+    },
+    {
+      "id": "case_02",
+      "image": "data/sample/dog smiling.jpg",
+      "expected_decision": "WAIT_FOR_USER",
+      "category": "no_human_face"
+    },
+    {
+      "id": "case_03",
+      "image": "data/sample/man smiling.jpg",
+      "expected_decision": "MOVE_CLOSER",
+      "category": "face_size"
+    },
+    {
+      "id": "case_04",
+      "image": "data/sample/manclosed.jpg",
+      "expected_decision": "MOVE_CLOSER",
+      "category": "face_size"
+    },
+    {
+      "id": "case_05",
+      "image": "data/sample/manclosedsmiling.jpg",
+      "expected_decision": "MOVE_CLOSER",
+      "category": "face_size"
+    },
+    {
+      "id": "case_06",
+      "image": "data/sample/manmouthopen.jpg",
+      "expected_decision": "MOVE_CLOSER",
+      "category": "face_size"
+    },
+    {
+        "id": "case_07",
+        "image": "data/sample/womansmiling.jpg",
+        "expected_decision": "REPOSITION",
+        "category": "position"
+      },
+    {
+      "id": "case_08",
+      "image": "data/sample/missing.jpg",
+      "expected_decision": "STOP",
+      "category": "invalid_input"
+    },
+    {
+      "id": "case_09",
+      "image": "data/sample/closeupsmile.jpg",
+      "expected_decision": "MOVE_BACK",
+      "category": "face_size"
+    },
+    {
+      "id": "case_10",
+      "image": "data/sample/oldmansmiling.jpg",
+      "expected_decision": "READY",
+      "category": "ready"
+    },
+    {
+      "id": "case_11",
+      "image": "data/sample/threekidssmiling.jpg",
+      "expected_decision": "ONE_LEARNER_REQUIRED",
+      "category": "multiple_faces"
+    },
+    {
+      "id": "case_12",
+      "image": "data/sample/twokidssmiling.jpg",
+      "expected_decision": "ONE_LEARNER_REQUIRED",
+      "category": "multiple_faces"
+    },
+    {
+      "id": "case_13",
+      "image": "data/sample/twosmilingonenot.jpg",
+      "expected_decision": "ONE_LEARNER_REQUIRED",
+      "category": "multiple_faces"
+    },
+    {
+        "id": "case_14",
+        "image": "data/sample/leftsidesmile.jpg",
+        "expected_decision": "REPOSITION",
+        "category": "position"
+      }
+  ]

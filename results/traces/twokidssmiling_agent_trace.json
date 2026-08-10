@@ -1,0 +1,77 @@
+{
+    "input": {
+        "image": "data/sample/twokidssmiling.jpg"
+    },
+    "perception": {
+        "agent": "PerceptionAgent",
+        "status": "success",
+        "input": {
+            "image": "data/sample/twokidssmiling.jpg"
+        },
+        "face": {
+            "detected": true,
+            "count": 2,
+            "centered": true,
+            "position": "center",
+            "size_ratio": 0.0758,
+            "offset_x_ratio": -0.1191,
+            "offset_y_ratio": -0.1587,
+            "boxes": [
+                {
+                    "x_min": 258,
+                    "y_min": 199,
+                    "x_max": 522,
+                    "y_max": 500,
+                    "box_width": 264,
+                    "box_height": 301,
+                    "area": 79464,
+                    "center_x": 390.0,
+                    "center_y": 349.5
+                },
+                {
+                    "x_min": 548,
+                    "y_min": 206,
+                    "x_max": 807,
+                    "y_max": 491,
+                    "box_width": 259,
+                    "box_height": 285,
+                    "area": 73815,
+                    "center_x": 677.5,
+                    "center_y": 348.5
+                }
+            ]
+        },
+        "mouth": {
+            "analyzed": false,
+            "visible": false,
+            "open": null,
+            "open_ratio": null
+        },
+        "visual_readiness": "multiple_faces",
+        "perception_ready": false,
+        "artifacts": {
+            "face_annotation": "results/images/annotated_twokidssmiling.jpg",
+            "mouth_annotation": null
+        },
+        "performance": {
+            "processing_ms": 256.97
+        }
+    },
+    "planning": {
+        "agent": "PlannerAgent",
+        "status": "success",
+        "decision": {
+            "state": "ONE_LEARNER_REQUIRED",
+            "reason": "More than one face was detected."
+        },
+        "action": {
+            "message": "Make sure only one learner is in front of the camera."
+        }
+    },
+    "final_action": {
+        "message": "Make sure only one learner is in front of the camera."
+    },
+    "performance": {
+        "total_processing_ms": 257.02
+    }
+}

@@ -1,0 +1,53 @@
+{
+    "input": {
+        "image": "data/sample/rotated_right.jpg"
+    },
+    "perception": {
+        "agent": "PerceptionAgent",
+        "status": "success",
+        "input": {
+            "image": "data/sample/rotated_right.jpg"
+        },
+        "face": {
+            "detected": true,
+            "count": 1,
+            "centered": true,
+            "position": "center",
+            "size_ratio": 0.0946,
+            "offset_x_ratio": 0.0941,
+            "offset_y_ratio": 0.1119
+        },
+        "mouth": {
+            "analyzed": true,
+            "visible": true,
+            "open": true,
+            "open_ratio": 0.2466
+        },
+        "visual_readiness": "ready",
+        "perception_ready": true,
+        "artifacts": {
+            "face_annotation": "results/images/annotated_rotated_right.jpg",
+            "mouth_annotation": "results/images/mouth_annotated_rotated_right.jpg"
+        },
+        "performance": {
+            "processing_ms": 363.02
+        }
+    },
+    "planning": {
+        "agent": "PlannerAgent",
+        "status": "success",
+        "decision": {
+            "state": "READY",
+            "reason": "One learner is visible, properly positioned, and the mouth is visible."
+        },
+        "action": {
+            "message": "Begin the speech practice exercise."
+        }
+    },
+    "final_action": {
+        "message": "Begin the speech practice exercise."
+    },
+    "performance": {
+        "total_processing_ms": 363.06
+    }
+}

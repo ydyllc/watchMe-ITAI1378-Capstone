@@ -1,0 +1,25 @@
+{
+    "input": {
+        "image": "data/sample/dog smiling.jpg"
+    },
+    "perception": {
+        "face_detected": false,
+        "face_count": 0,
+        "face_centered": false,
+        "face_position": null,
+        "face_size_ratio": null,
+        "offset_x_ratio": null,
+        "offset_y_ratio": null
+    },
+    "decision": {
+        "state": "no_face",
+        "reason": "No face was detected in the image."
+    },
+    "action": {
+        "message": "Move into view of the camera.",
+        "annotated_output": "results/images/annotated_dog smiling.jpg"
+    },
+    "performance": {
+        "processing_ms": 182.93
+    }
+}

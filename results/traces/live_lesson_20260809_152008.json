@@ -1,0 +1,40 @@
+{
+  "session_id": "live_lesson_20260809_152008",
+  "agent": "LiveLessonOrchestrator",
+  "status": "success",
+  "session_state": "WAITING_FOR_LEARNER",
+  "lesson_type": "cvc",
+  "input_mode": "microphone",
+  "start_method": null,
+  "camera": {
+    "camera_index": 0,
+    "frames_processed": 180,
+    "perception_updates": 12,
+    "face_count": 0,
+    "face_centered": null,
+    "face_position": null,
+    "face_size_ratio": null
+  },
+  "planner": {
+    "final_decision": "READY",
+    "final_reason": "One learner is visible, properly positioned, and the mouth is visible.",
+    "final_action": "Begin the speech practice exercise.",
+    "error": null
+  },
+  "mouth_movement": {
+    "detected": false,
+    "movement_events": 0,
+    "max_delta": 0.0,
+    "threshold": 0.03
+  },
+  "lesson": {
+    "completed": false,
+    "error": null,
+    "result": null
+  },
+  "timing": {
+    "started": "2026-08-09T15:20:08.243303",
+    "ended": "2026-08-09T15:20:26.582891",
+    "duration_seconds": 18.339588
+  }
+}

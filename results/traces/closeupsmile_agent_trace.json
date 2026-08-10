@@ -1,0 +1,66 @@
+{
+    "input": {
+        "image": "data/sample/closeupsmile.jpg"
+    },
+    "perception": {
+        "agent": "PerceptionAgent",
+        "status": "success",
+        "input": {
+            "image": "data/sample/closeupsmile.jpg"
+        },
+        "face": {
+            "detected": true,
+            "count": 1,
+            "centered": true,
+            "position": "center",
+            "size_ratio": 0.7374,
+            "offset_x_ratio": 0.0413,
+            "offset_y_ratio": -0.0972,
+            "boxes": [
+                {
+                    "x_min": 76,
+                    "y_min": 0,
+                    "x_max": 908,
+                    "y_max": 825,
+                    "box_width": 832,
+                    "box_height": 825,
+                    "area": 686400,
+                    "center_x": 492.0,
+                    "center_y": 412.5
+                }
+            ]
+        },
+        "mouth": {
+            "analyzed": true,
+            "visible": true,
+            "open": true,
+            "open_ratio": 0.3281
+        },
+        "visual_readiness": "move_back",
+        "perception_ready": false,
+        "artifacts": {
+            "face_annotation": "results/images/annotated_closeupsmile.jpg",
+            "mouth_annotation": "results/images/mouth_annotated_closeupsmile.jpg"
+        },
+        "performance": {
+            "processing_ms": 362.66
+        }
+    },
+    "planning": {
+        "agent": "PlannerAgent",
+        "status": "success",
+        "decision": {
+            "state": "MOVE_BACK",
+            "reason": "The learner is centered, but the face is too large in the frame."
+        },
+        "action": {
+            "message": "Move farther away from the camera."
+        }
+    },
+    "final_action": {
+        "message": "Move farther away from the camera."
+    },
+    "performance": {
+        "total_processing_ms": 362.72
+    }
+}

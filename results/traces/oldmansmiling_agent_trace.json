@@ -1,0 +1,66 @@
+{
+    "input": {
+        "image": "data/sample/oldmansmiling.jpg"
+    },
+    "perception": {
+        "agent": "PerceptionAgent",
+        "status": "success",
+        "input": {
+            "image": "data/sample/oldmansmiling.jpg"
+        },
+        "face": {
+            "detected": true,
+            "count": 1,
+            "centered": true,
+            "position": "center",
+            "size_ratio": 0.1035,
+            "offset_x_ratio": 0.1123,
+            "offset_y_ratio": -0.0883,
+            "boxes": [
+                {
+                    "x_min": 629,
+                    "y_min": 182,
+                    "x_max": 963,
+                    "y_max": 531,
+                    "box_width": 334,
+                    "box_height": 349,
+                    "area": 116566,
+                    "center_x": 796.0,
+                    "center_y": 356.5
+                }
+            ]
+        },
+        "mouth": {
+            "analyzed": true,
+            "visible": true,
+            "open": true,
+            "open_ratio": 0.1541
+        },
+        "visual_readiness": "ready",
+        "perception_ready": true,
+        "artifacts": {
+            "face_annotation": "results/images/annotated_oldmansmiling.jpg",
+            "mouth_annotation": "results/images/mouth_annotated_oldmansmiling.jpg"
+        },
+        "performance": {
+            "processing_ms": 403.32
+        }
+    },
+    "planning": {
+        "agent": "PlannerAgent",
+        "status": "success",
+        "decision": {
+            "state": "READY",
+            "reason": "One learner is visible, properly positioned, and the mouth is visible."
+        },
+        "action": {
+            "message": "Begin the speech practice exercise."
+        }
+    },
+    "final_action": {
+        "message": "Begin the speech practice exercise."
+    },
+    "performance": {
+        "total_processing_ms": 403.38
+    }
+}

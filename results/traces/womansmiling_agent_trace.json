@@ -1,0 +1,66 @@
+{
+    "input": {
+        "image": "data/sample/womansmiling.jpg"
+    },
+    "perception": {
+        "agent": "PerceptionAgent",
+        "status": "success",
+        "input": {
+            "image": "data/sample/womansmiling.jpg"
+        },
+        "face": {
+            "detected": true,
+            "count": 1,
+            "centered": false,
+            "position": "up",
+            "size_ratio": 0.0703,
+            "offset_x_ratio": -0.0927,
+            "offset_y_ratio": -0.2423,
+            "boxes": [
+                {
+                    "x_min": 458,
+                    "y_min": 94,
+                    "x_max": 764,
+                    "y_max": 473,
+                    "box_width": 306,
+                    "box_height": 379,
+                    "area": 115974,
+                    "center_x": 611.0,
+                    "center_y": 283.5
+                }
+            ]
+        },
+        "mouth": {
+            "analyzed": true,
+            "visible": true,
+            "open": true,
+            "open_ratio": 0.197
+        },
+        "visual_readiness": "move_closer",
+        "perception_ready": false,
+        "artifacts": {
+            "face_annotation": "results/images/annotated_womansmiling.jpg",
+            "mouth_annotation": "results/images/mouth_annotated_womansmiling.jpg"
+        },
+        "performance": {
+            "processing_ms": 379.89
+        }
+    },
+    "planning": {
+        "agent": "PlannerAgent",
+        "status": "success",
+        "decision": {
+            "state": "REPOSITION",
+            "reason": "The learner's face is visible but is positioned up of the acceptable center area."
+        },
+        "action": {
+            "message": "Move toward the center of the camera."
+        }
+    },
+    "final_action": {
+        "message": "Move toward the center of the camera."
+    },
+    "performance": {
+        "total_processing_ms": 379.95
+    }
+}

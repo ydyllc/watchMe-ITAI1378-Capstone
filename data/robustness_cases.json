@@ -1,0 +1,51 @@
+[
+    {
+      "id": "robust_01",
+      "image": "data/sample/dark.jpg",
+      "expected_behavior": "PROCESS_WITHOUT_CRASH",
+      "description": "Darkened version of a valid READY image."
+    },
+    {
+      "id": "robust_02",
+      "image": "data/sample/blurry.jpg",
+      "expected_behavior": "PROCESS_WITHOUT_CRASH",
+      "description": "Heavily blurred version of a valid READY image."
+    },
+    {
+      "id": "robust_03",
+      "image": "data/sample/black_white.jpg",
+      "expected_behavior": "PROCESS_WITHOUT_CRASH",
+      "description": "Grayscale version of a valid READY image."
+    },
+    {
+      "id": "robust_04",
+      "image": "data/sample/rotated_left.jpg",
+      "expected_behavior": "PROCESS_WITHOUT_CRASH",
+      "description": "Image rotated 90 degrees counterclockwise."
+    },
+    {
+      "id": "robust_05",
+      "image": "data/sample/rotated_right.jpg",
+      "expected_behavior": "PROCESS_WITHOUT_CRASH",
+      "description": "Image rotated 90 degrees clockwise."
+    },
+    {
+      "id": "robust_06",
+      "image": "data/sample/upside_down.jpg",
+      "expected_behavior": "PROCESS_WITHOUT_CRASH",
+      "description": "Image rotated 180 degrees."
+    },
+    {
+      "id": "robust_07",
+      "image": "data/sample/blank.jpg",
+      "expected_behavior": "WAIT_FOR_USER",
+      "description": "Blank image containing no learner."
+    },
+    {
+      "id": "robust_08",
+      "image": "data/sample/corrupt.jpg",
+      "expected_behavior": "STOP",
+      "description": "File with a JPG extension containing invalid image data."
+    }
+  ]
+  

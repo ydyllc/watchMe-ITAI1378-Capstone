@@ -1,0 +1,149 @@
+{
+    "total_cases": 14,
+    "passed_cases": 14,
+    "failed_cases": 0,
+    "task_success_rate_percent": 100.0,
+    "average_latency_ms": 309.65,
+    "results": [
+        {
+            "id": "case_01",
+            "image": "data/sample/smiling.jpg",
+            "category": "face_size",
+            "expected_decision": "MOVE_CLOSER",
+            "actual_decision": "MOVE_CLOSER",
+            "passed": true,
+            "latency_ms": 455.44,
+            "trace_output": "results/traces/smiling_agent_trace.json"
+        },
+        {
+            "id": "case_02",
+            "image": "data/sample/dog smiling.jpg",
+            "category": "no_human_face",
+            "expected_decision": "WAIT_FOR_USER",
+            "actual_decision": "WAIT_FOR_USER",
+            "passed": true,
+            "latency_ms": 188.98,
+            "trace_output": "results/traces/dog smiling_agent_trace.json"
+        },
+        {
+            "id": "case_03",
+            "image": "data/sample/man smiling.jpg",
+            "category": "face_size",
+            "expected_decision": "MOVE_CLOSER",
+            "actual_decision": "MOVE_CLOSER",
+            "passed": true,
+            "latency_ms": 365.63,
+            "trace_output": "results/traces/man smiling_agent_trace.json"
+        },
+        {
+            "id": "case_04",
+            "image": "data/sample/manclosed.jpg",
+            "category": "face_size",
+            "expected_decision": "MOVE_CLOSER",
+            "actual_decision": "MOVE_CLOSER",
+            "passed": true,
+            "latency_ms": 374.44,
+            "trace_output": "results/traces/manclosed_agent_trace.json"
+        },
+        {
+            "id": "case_05",
+            "image": "data/sample/manclosedsmiling.jpg",
+            "category": "face_size",
+            "expected_decision": "MOVE_CLOSER",
+            "actual_decision": "MOVE_CLOSER",
+            "passed": true,
+            "latency_ms": 332.96,
+            "trace_output": "results/traces/manclosedsmiling_agent_trace.json"
+        },
+        {
+            "id": "case_06",
+            "image": "data/sample/manmouthopen.jpg",
+            "category": "face_size",
+            "expected_decision": "MOVE_CLOSER",
+            "actual_decision": "MOVE_CLOSER",
+            "passed": true,
+            "latency_ms": 398.51,
+            "trace_output": "results/traces/manmouthopen_agent_trace.json"
+        },
+        {
+            "id": "case_07",
+            "image": "data/sample/womansmiling.jpg",
+            "category": "position",
+            "expected_decision": "REPOSITION",
+            "actual_decision": "REPOSITION",
+            "passed": true,
+            "latency_ms": 381.96,
+            "trace_output": "results/traces/womansmiling_agent_trace.json"
+        },
+        {
+            "id": "case_08",
+            "image": "data/sample/missing.jpg",
+            "category": "invalid_input",
+            "expected_decision": "STOP",
+            "actual_decision": "STOP",
+            "passed": true,
+            "latency_ms": 1.99,
+            "trace_output": "results/traces/missing_agent_trace.json"
+        },
+        {
+            "id": "case_09",
+            "image": "data/sample/closeupsmile.jpg",
+            "category": "face_size",
+            "expected_decision": "MOVE_BACK",
+            "actual_decision": "MOVE_BACK",
+            "passed": true,
+            "latency_ms": 365.02,
+            "trace_output": "results/traces/closeupsmile_agent_trace.json"
+        },
+        {
+            "id": "case_10",
+            "image": "data/sample/oldmansmiling.jpg",
+            "category": "ready",
+            "expected_decision": "READY",
+            "actual_decision": "READY",
+            "passed": true,
+            "latency_ms": 406.64,
+            "trace_output": "results/traces/oldmansmiling_agent_trace.json"
+        },
+        {
+            "id": "case_11",
+            "image": "data/sample/threekidssmiling.jpg",
+            "category": "multiple_faces",
+            "expected_decision": "ONE_LEARNER_REQUIRED",
+            "actual_decision": "ONE_LEARNER_REQUIRED",
+            "passed": true,
+            "latency_ms": 239.57,
+            "trace_output": "results/traces/threekidssmiling_agent_trace.json"
+        },
+        {
+            "id": "case_12",
+            "image": "data/sample/twokidssmiling.jpg",
+            "category": "multiple_faces",
+            "expected_decision": "ONE_LEARNER_REQUIRED",
+            "actual_decision": "ONE_LEARNER_REQUIRED",
+            "passed": true,
+            "latency_ms": 259.43,
+            "trace_output": "results/traces/twokidssmiling_agent_trace.json"
+        },
+        {
+            "id": "case_13",
+            "image": "data/sample/twosmilingonenot.jpg",
+            "category": "multiple_faces",
+            "expected_decision": "ONE_LEARNER_REQUIRED",
+            "actual_decision": "ONE_LEARNER_REQUIRED",
+            "passed": true,
+            "latency_ms": 297.24,
+            "trace_output": "results/traces/twosmilingonenot_agent_trace.json"
+        },
+        {
+            "id": "case_14",
+            "image": "data/sample/leftsidesmile.jpg",
+            "category": "position",
+            "expected_decision": "REPOSITION",
+            "actual_decision": "REPOSITION",
+            "passed": true,
+            "latency_ms": 267.32,
+            "trace_output": "results/traces/leftsidesmile_agent_trace.json"
+        }
+    ]
+}

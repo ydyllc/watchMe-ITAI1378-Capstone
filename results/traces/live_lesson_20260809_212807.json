@@ -1,0 +1,102 @@
+{
+  "session_id": "live_lesson_20260809_212807",
+  "agent": "LiveLessonOrchestrator",
+  "session_state": "COMPLETE",
+  "lesson_type": "shapes",
+  "input_mode": "microphone",
+  "start_method": "automatic_countdown",
+  "camera": {
+    "camera_index": 0,
+    "frames_processed": 731,
+    "perception_updates": 48,
+    "face_detected": true,
+    "face_count": 1,
+    "face_centered": true,
+    "face_position": "center",
+    "face_size_ratio": 0.0738,
+    "visual_readiness": "move_closer",
+    "face_box": [
+      228,
+      114,
+      367,
+      277
+    ]
+  },
+  "planner": {
+    "final_decision": "MOVE_CLOSER",
+    "final_reason": "The learner is centered, but the face is too small in the frame.",
+    "final_action": "Move closer to the camera.",
+    "integration_error": null
+  },
+  "mouth_movement": {
+    "detected": true,
+    "movement_events": 18,
+    "max_delta": 0.2841,
+    "threshold": 0.03
+  },
+  "lesson_interface": {
+    "phase": "complete",
+    "current_prompt": "triangle",
+    "last_response": "valve will explode.",
+    "last_outcome": "INCORRECT",
+    "item_number": 3,
+    "total_items": 3,
+    "correct": 2,
+    "near_match": 0,
+    "incorrect": 1,
+    "no_input": 0
+  },
+  "lesson": {
+    "completed": true,
+    "error": null,
+    "result": {
+      "agent": "LessonAgent",
+      "status": "success",
+      "lesson_type": "shapes",
+      "input_mode": "microphone",
+      "lesson": {
+        "lesson_type": "shapes",
+        "input_mode": "microphone",
+        "total_items": 3,
+        "correct": 2,
+        "near_match": 0,
+        "incorrect": 1,
+        "no_input": 0,
+        "results": [
+          {
+            "prompt": "circle",
+            "response": "circle.",
+            "outcome": "CORRECT",
+            "attempt": 1,
+            "input_mode": "microphone",
+            "audio_path": "results\\audio\\shape_circle_20260809_212822_060051.wav",
+            "audio_level": 0.0012661836808547378
+          },
+          {
+            "prompt": "square",
+            "response": "square. square.",
+            "outcome": "CORRECT",
+            "attempt": 1,
+            "input_mode": "microphone",
+            "audio_path": "results\\audio\\shape_square_20260809_212828_931392.wav",
+            "audio_level": 0.0017310645198449492
+          },
+          {
+            "prompt": "triangle",
+            "response": "valve will explode.",
+            "outcome": "INCORRECT",
+            "attempt": 1,
+            "input_mode": "microphone",
+            "audio_path": "results\\audio\\shape_triangle_20260809_212834_917860.wav",
+            "audio_level": 0.0014101436827331781
+          }
+        ]
+      }
+    }
+  },
+  "timing": {
+    "started": "2026-08-09T21:28:07.814344",
+    "ended": "2026-08-09T21:28:42.970746",
+    "duration_seconds": 35.156402
+  }
+}

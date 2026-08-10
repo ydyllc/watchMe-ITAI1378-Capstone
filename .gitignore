@@ -1,0 +1,19 @@
+# Virtual environments
+.venv/
+venv/
+.venv_test/
+.venv_final/
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# Local environment configuration
+.env
+
+# Generated audio recordings
+results/audio/*.wav
+
+# Operating system files
+.DS_Store
+Thumbs.db

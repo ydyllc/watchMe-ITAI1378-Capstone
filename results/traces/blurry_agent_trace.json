@@ -1,0 +1,53 @@
+{
+    "input": {
+        "image": "data/sample/blurry.jpg"
+    },
+    "perception": {
+        "agent": "PerceptionAgent",
+        "status": "success",
+        "input": {
+            "image": "data/sample/blurry.jpg"
+        },
+        "face": {
+            "detected": true,
+            "count": 1,
+            "centered": true,
+            "position": "center",
+            "size_ratio": 0.1038,
+            "offset_x_ratio": 0.1154,
+            "offset_y_ratio": -0.0889
+        },
+        "mouth": {
+            "analyzed": true,
+            "visible": true,
+            "open": true,
+            "open_ratio": 0.2461
+        },
+        "visual_readiness": "ready",
+        "perception_ready": true,
+        "artifacts": {
+            "face_annotation": "results/images/annotated_blurry.jpg",
+            "mouth_annotation": "results/images/mouth_annotated_blurry.jpg"
+        },
+        "performance": {
+            "processing_ms": 313.46
+        }
+    },
+    "planning": {
+        "agent": "PlannerAgent",
+        "status": "success",
+        "decision": {
+            "state": "READY",
+            "reason": "One learner is visible, properly positioned, and the mouth is visible."
+        },
+        "action": {
+            "message": "Begin the speech practice exercise."
+        }
+    },
+    "final_action": {
+        "message": "Begin the speech practice exercise."
+    },
+    "performance": {
+        "total_processing_ms": 313.5
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "input": {
+        "image": "C:/Users/Administrator/OneDrive/Desktop/watchMe/results/live/live_lesson_20260809_152008_frame.jpg"
+    },
+    "perception": {
+        "face_detected": true,
+        "face_count": 1,
+        "face_centered": true,
+        "face_position": "center",
+        "face_size_ratio": 0.0976,
+        "offset_x_ratio": -0.0211,
+        "offset_y_ratio": 0.0865
+    },
+    "decision": {
+        "state": "ready",
+        "reason": "One face is visible, centered, and within the expected size range."
+    },
+    "action": {
+        "message": "You are ready to begin the speech exercise.",
+        "annotated_output": "results/images/annotated_live_lesson_20260809_152008_frame.jpg"
+    },
+    "performance": {
+        "processing_ms": 186.48
+    }
+}

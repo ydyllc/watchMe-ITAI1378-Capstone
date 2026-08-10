@@ -1,0 +1,25 @@
+{
+    "input": {
+        "image": "data/sample/manclosed.jpg"
+    },
+    "perception": {
+        "face_detected": true,
+        "face_count": 1,
+        "face_centered": true,
+        "face_position": "center",
+        "face_size_ratio": 0.0368,
+        "offset_x_ratio": -0.0087,
+        "offset_y_ratio": -0.1994
+    },
+    "decision": {
+        "state": "move_closer",
+        "reason": "The learner's face is visible but too small in the frame."
+    },
+    "action": {
+        "message": "Move closer to the camera.",
+        "annotated_output": "results/images/annotated_manclosed.jpg"
+    },
+    "performance": {
+        "processing_ms": 214.84
+    }
+}

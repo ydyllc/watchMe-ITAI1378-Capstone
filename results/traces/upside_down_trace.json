@@ -1,0 +1,25 @@
+{
+    "input": {
+        "image": "data/sample/upside_down.jpg"
+    },
+    "perception": {
+        "face_detected": true,
+        "face_count": 1,
+        "face_centered": false,
+        "face_position": "down",
+        "face_size_ratio": 0.0938,
+        "offset_x_ratio": -0.1138,
+        "offset_y_ratio": 0.2252
+    },
+    "decision": {
+        "state": "reposition",
+        "reason": "The learner's face is visible but is not centered in the frame."
+    },
+    "action": {
+        "message": "Move toward the center of the camera.",
+        "annotated_output": "results/images/annotated_upside_down.jpg"
+    },
+    "performance": {
+        "processing_ms": 230.48
+    }
+}

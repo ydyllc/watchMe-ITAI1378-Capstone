@@ -1,0 +1,66 @@
+{
+    "input": {
+        "image": "data/sample/leftsidesmile.jpg"
+    },
+    "perception": {
+        "agent": "PerceptionAgent",
+        "status": "success",
+        "input": {
+            "image": "data/sample/leftsidesmile.jpg"
+        },
+        "face": {
+            "detected": true,
+            "count": 1,
+            "centered": false,
+            "position": "left",
+            "size_ratio": 0.0483,
+            "offset_x_ratio": -0.201,
+            "offset_y_ratio": -0.1547,
+            "boxes": [
+                {
+                    "x_min": 106,
+                    "y_min": 65,
+                    "x_max": 190,
+                    "y_max": 156,
+                    "box_width": 84,
+                    "box_height": 91,
+                    "area": 7644,
+                    "center_x": 148.0,
+                    "center_y": 110.5
+                }
+            ]
+        },
+        "mouth": {
+            "analyzed": true,
+            "visible": true,
+            "open": true,
+            "open_ratio": 0.1496
+        },
+        "visual_readiness": "move_closer",
+        "perception_ready": false,
+        "artifacts": {
+            "face_annotation": "results/images/annotated_leftsidesmile.jpg",
+            "mouth_annotation": "results/images/mouth_annotated_leftsidesmile.jpg"
+        },
+        "performance": {
+            "processing_ms": 263.91
+        }
+    },
+    "planning": {
+        "agent": "PlannerAgent",
+        "status": "success",
+        "decision": {
+            "state": "REPOSITION",
+            "reason": "The learner's face is visible but is positioned left of the acceptable center area."
+        },
+        "action": {
+            "message": "Move toward the center of the camera."
+        }
+    },
+    "final_action": {
+        "message": "Move toward the center of the camera."
+    },
+    "performance": {
+        "total_processing_ms": 263.95
+    }
+}

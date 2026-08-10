@@ -1,0 +1,53 @@
+{
+    "input": {
+        "image": "data/sample/upside_down.jpg"
+    },
+    "perception": {
+        "agent": "PerceptionAgent",
+        "status": "success",
+        "input": {
+            "image": "data/sample/upside_down.jpg"
+        },
+        "face": {
+            "detected": true,
+            "count": 1,
+            "centered": false,
+            "position": "down",
+            "size_ratio": 0.0938,
+            "offset_x_ratio": -0.1138,
+            "offset_y_ratio": 0.2252
+        },
+        "mouth": {
+            "analyzed": true,
+            "visible": true,
+            "open": false,
+            "open_ratio": 0.0111
+        },
+        "visual_readiness": "reposition",
+        "perception_ready": false,
+        "artifacts": {
+            "face_annotation": "results/images/annotated_upside_down.jpg",
+            "mouth_annotation": "results/images/mouth_annotated_upside_down.jpg"
+        },
+        "performance": {
+            "processing_ms": 327.85
+        }
+    },
+    "planning": {
+        "agent": "PlannerAgent",
+        "status": "success",
+        "decision": {
+            "state": "REPOSITION",
+            "reason": "The learner's face is visible but is positioned down of the acceptable center area."
+        },
+        "action": {
+            "message": "Move toward the center of the camera."
+        }
+    },
+    "final_action": {
+        "message": "Move toward the center of the camera."
+    },
+    "performance": {
+        "total_processing_ms": 327.89
+    }
+}

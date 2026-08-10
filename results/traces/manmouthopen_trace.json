@@ -1,0 +1,25 @@
+{
+    "input": {
+        "image": "data/sample/manmouthopen.jpg"
+    },
+    "perception": {
+        "face_detected": true,
+        "face_count": 1,
+        "face_centered": true,
+        "face_position": "center",
+        "face_size_ratio": 0.0333,
+        "offset_x_ratio": 0.1407,
+        "offset_y_ratio": -0.0803
+    },
+    "decision": {
+        "state": "move_closer",
+        "reason": "The learner's face is visible but too small in the frame."
+    },
+    "action": {
+        "message": "Move closer to the camera.",
+        "annotated_output": "results/images/annotated_manmouthopen.jpg"
+    },
+    "performance": {
+        "processing_ms": 198.56
+    }
+}

@@ -1,0 +1,8 @@
+watchMe Agent Evaluation Metrics
+================================
+
+Total scenarios: 14
+Passed scenarios: 14
+Failed scenarios: 0
+Task success rate: 100.00%
+Average end-to-end latency: 309.65 ms

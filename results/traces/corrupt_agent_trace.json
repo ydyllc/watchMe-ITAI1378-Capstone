@@ -1,0 +1,28 @@
+{
+    "input": {
+        "image": "data/sample/corrupt.jpg"
+    },
+    "perception": {
+        "agent": "PerceptionAgent",
+        "status": "error",
+        "input": "data/sample/corrupt.jpg",
+        "reason": "OpenCV could not read the image. The file may be corrupt."
+    },
+    "planning": {
+        "agent": "PlannerAgent",
+        "status": "error",
+        "decision": {
+            "state": "STOP",
+            "reason": "OpenCV could not read the image. The file may be corrupt."
+        },
+        "action": {
+            "message": "Stop processing this input and report the perception error."
+        }
+    },
+    "final_action": {
+        "message": "Stop processing this input and report the perception error."
+    },
+    "performance": {
+        "total_processing_ms": 11.05
+    }
+}

@@ -1,0 +1,105 @@
+{
+    "status": "success",
+    "input_folder": "data/sample",
+    "images_processed": 13,
+    "decision_counts": {
+        "MOVE_BACK": 1,
+        "WAIT_FOR_USER": 1,
+        "MOVE_CLOSER": 7,
+        "READY": 1,
+        "ONE_LEARNER_REQUIRED": 3
+    },
+    "results": [
+        {
+            "image": "data/sample/closeupsmile.jpg",
+            "decision": "MOVE_BACK",
+            "reason": "The learner's face is too large in the frame.",
+            "action": "Move farther away from the camera.",
+            "trace": "results/traces/closeupsmile_agent_trace.json"
+        },
+        {
+            "image": "data/sample/dog smiling.jpg",
+            "decision": "WAIT_FOR_USER",
+            "reason": "No learner face was detected.",
+            "action": "Move into view of the camera.",
+            "trace": "results/traces/dog smiling_agent_trace.json"
+        },
+        {
+            "image": "data/sample/leftsidesmile.jpg",
+            "decision": "MOVE_CLOSER",
+            "reason": "The learner is visible and centered but the face is too small in the frame.",
+            "action": "Move closer to the camera.",
+            "trace": "results/traces/leftsidesmile_agent_trace.json"
+        },
+        {
+            "image": "data/sample/man smiling.jpg",
+            "decision": "MOVE_CLOSER",
+            "reason": "The learner is visible and centered but the face is too small in the frame.",
+            "action": "Move closer to the camera.",
+            "trace": "results/traces/man smiling_agent_trace.json"
+        },
+        {
+            "image": "data/sample/manclosed.jpg",
+            "decision": "MOVE_CLOSER",
+            "reason": "The learner is visible and centered but the face is too small in the frame.",
+            "action": "Move closer to the camera.",
+            "trace": "results/traces/manclosed_agent_trace.json"
+        },
+        {
+            "image": "data/sample/manclosedsmiling.jpg",
+            "decision": "MOVE_CLOSER",
+            "reason": "The learner is visible and centered but the face is too small in the frame.",
+            "action": "Move closer to the camera.",
+            "trace": "results/traces/manclosedsmiling_agent_trace.json"
+        },
+        {
+            "image": "data/sample/manmouthopen.jpg",
+            "decision": "MOVE_CLOSER",
+            "reason": "The learner is visible and centered but the face is too small in the frame.",
+            "action": "Move closer to the camera.",
+            "trace": "results/traces/manmouthopen_agent_trace.json"
+        },
+        {
+            "image": "data/sample/oldmansmiling.jpg",
+            "decision": "READY",
+            "reason": "One learner is visible, properly positioned, and the mouth is visible.",
+            "action": "Begin the speech practice exercise.",
+            "trace": "results/traces/oldmansmiling_agent_trace.json"
+        },
+        {
+            "image": "data/sample/smiling.jpg",
+            "decision": "MOVE_CLOSER",
+            "reason": "The learner is visible and centered but the face is too small in the frame.",
+            "action": "Move closer to the camera.",
+            "trace": "results/traces/smiling_agent_trace.json"
+        },
+        {
+            "image": "data/sample/threekidssmiling.jpg",
+            "decision": "ONE_LEARNER_REQUIRED",
+            "reason": "More than one face was detected.",
+            "action": "Make sure only one learner is in front of the camera.",
+            "trace": "results/traces/threekidssmiling_agent_trace.json"
+        },
+        {
+            "image": "data/sample/twokidssmiling.jpg",
+            "decision": "ONE_LEARNER_REQUIRED",
+            "reason": "More than one face was detected.",
+            "action": "Make sure only one learner is in front of the camera.",
+            "trace": "results/traces/twokidssmiling_agent_trace.json"
+        },
+        {
+            "image": "data/sample/twosmilingonenot.jpg",
+            "decision": "ONE_LEARNER_REQUIRED",
+            "reason": "More than one face was detected.",
+            "action": "Make sure only one learner is in front of the camera.",
+            "trace": "results/traces/twosmilingonenot_agent_trace.json"
+        },
+        {
+            "image": "data/sample/womansmiling.jpg",
+            "decision": "MOVE_CLOSER",
+            "reason": "The learner is visible and centered but the face is too small in the frame.",
+            "action": "Move closer to the camera.",
+            "trace": "results/traces/womansmiling_agent_trace.json"
+        }
+    ]
+}

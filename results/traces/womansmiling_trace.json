@@ -1,0 +1,25 @@
+{
+    "input": {
+        "image": "data/sample/womansmiling.jpg"
+    },
+    "perception": {
+        "face_detected": true,
+        "face_count": 1,
+        "face_centered": false,
+        "face_position": "up",
+        "face_size_ratio": 0.0703,
+        "offset_x_ratio": -0.0927,
+        "offset_y_ratio": -0.2423
+    },
+    "decision": {
+        "state": "move_closer",
+        "reason": "The learner's face is visible but too small in the frame."
+    },
+    "action": {
+        "message": "Move closer to the camera.",
+        "annotated_output": "results/images/annotated_womansmiling.jpg"
+    },
+    "performance": {
+        "processing_ms": 221.05
+    }
+}

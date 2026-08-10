@@ -1,0 +1,80 @@
+{
+    "evaluation_name": "watchMe Speech Lesson Functional Validation",
+    "description": "Controlled functional validation cases for the watchMe CVC lesson and Whisper speech-input pipeline. These cases validate system behavior, not clinical speech or pronunciation accuracy.",
+    "input_mode": "microphone",
+    "whisper_model": "tiny.en",
+    "microphone_device": 7,
+    "silence_threshold": 0.001,
+    "cases": [
+      {
+        "case_id": "speech_01",
+        "target": "cat",
+        "test_type": "correct",
+        "spoken_input": "cat",
+        "expected_outcome": "CORRECT"
+      },
+      {
+        "case_id": "speech_02",
+        "target": "dog",
+        "test_type": "correct",
+        "spoken_input": "dog",
+        "expected_outcome": "CORRECT"
+      },
+      {
+        "case_id": "speech_03",
+        "target": "sun",
+        "test_type": "correct",
+        "spoken_input": "sun",
+        "expected_outcome": "CORRECT"
+      },
+      {
+        "case_id": "speech_04",
+        "target": "hat",
+        "test_type": "correct",
+        "spoken_input": "hat",
+        "expected_outcome": "CORRECT"
+      },
+      {
+        "case_id": "speech_05",
+        "target": "bed",
+        "test_type": "correct",
+        "spoken_input": "bed",
+        "expected_outcome": "CORRECT"
+      },
+      {
+        "case_id": "speech_06",
+        "target": "cat",
+        "test_type": "near_match",
+        "spoken_input": "cap",
+        "expected_outcome": "NEAR_MATCH"
+      },
+      {
+        "case_id": "speech_07",
+        "target": "dog",
+        "test_type": "near_match",
+        "spoken_input": "dot",
+        "expected_outcome": "NEAR_MATCH"
+      },
+      {
+        "case_id": "speech_08",
+        "target": "hat",
+        "test_type": "near_match",
+        "spoken_input": "hot",
+        "expected_outcome": "NEAR_MATCH"
+      },
+      {
+        "case_id": "speech_09",
+        "target": "sun",
+        "test_type": "incorrect",
+        "spoken_input": "unrelated response",
+        "expected_outcome": "INCORRECT"
+      },
+      {
+        "case_id": "speech_10",
+        "target": "bed",
+        "test_type": "no_input",
+        "spoken_input": "",
+        "expected_outcome": "NO_INPUT"
+      }
+    ]
+  }

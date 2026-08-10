@@ -1,0 +1,102 @@
+{
+  "session_id": "live_lesson_20260809_163543",
+  "agent": "LiveLessonOrchestrator",
+  "session_state": "COMPLETE",
+  "lesson_type": "shapes",
+  "input_mode": "microphone",
+  "start_method": "automatic_countdown",
+  "camera": {
+    "camera_index": 0,
+    "frames_processed": 870,
+    "perception_updates": 58,
+    "face_detected": true,
+    "face_count": 1,
+    "face_centered": true,
+    "face_position": "center",
+    "face_size_ratio": 0.1307,
+    "visual_readiness": "ready",
+    "face_box": [
+      124,
+      220,
+      317,
+      428
+    ]
+  },
+  "planner": {
+    "final_decision": "READY",
+    "final_reason": "One learner is visible, properly positioned, and the mouth is visible.",
+    "final_action": "Begin the speech practice exercise.",
+    "integration_error": null
+  },
+  "mouth_movement": {
+    "detected": true,
+    "movement_events": 9,
+    "max_delta": 0.3312,
+    "threshold": 0.03
+  },
+  "lesson_interface": {
+    "phase": "complete",
+    "current_prompt": "triangle",
+    "last_response": "",
+    "last_outcome": "NO_INPUT",
+    "item_number": 3,
+    "total_items": 3,
+    "correct": 0,
+    "near_match": 0,
+    "incorrect": 1,
+    "no_input": 2
+  },
+  "lesson": {
+    "completed": true,
+    "error": null,
+    "result": {
+      "agent": "LessonAgent",
+      "status": "success",
+      "lesson_type": "shapes",
+      "input_mode": "microphone",
+      "lesson": {
+        "lesson_type": "shapes",
+        "input_mode": "microphone",
+        "total_items": 3,
+        "correct": 0,
+        "near_match": 0,
+        "incorrect": 1,
+        "no_input": 2,
+        "results": [
+          {
+            "prompt": "circle",
+            "response": "",
+            "outcome": "NO_INPUT",
+            "attempt": 1,
+            "input_mode": "microphone",
+            "audio_path": "results\\audio\\shape_circle_20260809_163607_912029.wav",
+            "audio_level": 0.0003784164146054536
+          },
+          {
+            "prompt": "square",
+            "response": "sara",
+            "outcome": "INCORRECT",
+            "attempt": 1,
+            "input_mode": "microphone",
+            "audio_path": "results\\audio\\shape_square_20260809_163613_633985.wav",
+            "audio_level": 0.001114018028602004
+          },
+          {
+            "prompt": "triangle",
+            "response": "",
+            "outcome": "NO_INPUT",
+            "attempt": 1,
+            "input_mode": "microphone",
+            "audio_path": "results\\audio\\shape_triangle_20260809_163627_298821.wav",
+            "audio_level": 0.0007911294815130532
+          }
+        ]
+      }
+    }
+  },
+  "timing": {
+    "started": "2026-08-09T16:35:43.606460",
+    "ended": "2026-08-09T16:36:37.537328",
+    "duration_seconds": 53.930868
+  }
+}

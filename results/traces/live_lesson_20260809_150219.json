@@ -1,0 +1,33 @@
+{
+  "session_id": "live_lesson_20260809_150219",
+  "agent": "LiveLessonOrchestrator",
+  "status": "success",
+  "lesson_type": "shapes",
+  "input_mode": "microphone",
+  "camera": {
+    "camera_index": 0,
+    "frames_processed": 1429,
+    "perception_updates": 0
+  },
+  "planner": {
+    "final_decision": "ERROR",
+    "final_reason": "PerceptionAgent does not expose run(), process(), or analyze().",
+    "final_action": "Live perception failed."
+  },
+  "mouth_movement": {
+    "detected": false,
+    "movement_events": 0,
+    "max_delta": 0.0,
+    "threshold": 0.03
+  },
+  "lesson": {
+    "completed": false,
+    "error": null,
+    "result": null
+  },
+  "timing": {
+    "started": "2026-08-09T15:02:19.781932",
+    "ended": "2026-08-09T15:03:14.499961",
+    "duration_seconds": 54.718029
+  }
+}
